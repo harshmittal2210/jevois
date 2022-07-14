@@ -349,11 +349,11 @@ void jevois::Serial::writeString(std::string const & str)
 
   switch (jevois::serial::linestyle::get())
   {
-  case jevois::serial::LineStyle::CR: fullstr += '\r'; break;
-  case jevois::serial::LineStyle::LF: fullstr += '\n'; break;
-  case jevois::serial::LineStyle::CRLF: fullstr += "\r\n"; break;
-  case jevois::serial::LineStyle::Zero: fullstr += '\0'; break;
-  case jevois::serial::LineStyle::Sloppy: fullstr += "\r\n"; break;
+  // case jevois::serial::LineStyle::CR: fullstr += '\r'; break;
+  // case jevois::serial::LineStyle::LF: fullstr += '\n'; break;
+  // case jevois::serial::LineStyle::CRLF: fullstr += "\r\n"; break;
+  // case jevois::serial::LineStyle::Zero: fullstr += '\0'; break;
+  // case jevois::serial::LineStyle::Sloppy: fullstr += "\r\n"; break;
   }
 
   this->write(fullstr.c_str(), fullstr.length());
